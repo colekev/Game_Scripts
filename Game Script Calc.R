@@ -1,6 +1,11 @@
+library(ggplot2)
+library(dplyr)
+library(readr)
+library(data.table)
+
 # Read in Armchair Analysis PLAY and GAME data
-play <- read.csv(file = "~/Desktop/AA/aa_2000_2015/csv/PLAY.csv")
-game <- read.csv(file = "~/Desktop/AA/aa_2000_2015/csv/GAME.csv")
+play <- read_csv(file = "~/Desktop/AA/aa_2000_2015/csv/PLAY.csv")
+game <- read_csv(file = "~/Desktop/AA/aa_2000_2015/csv/GAME.csv")
 
 # Calculate 2015 game scripts
 
@@ -71,7 +76,7 @@ gs_teamPlot <- ggplot(gs15, aes(gs, pRatio, label = team))
 gs_teamPlot + fte_theme() +
     geom_text(data = NE, size = 3) + 
     geom_smooth(data = gs15) + 
-    geom_point(data = gs15, alpha = 0.2, color = "blue") +
+    geom_point(data = gs15, alpha = 0.1, color = "blue") +
     labs(title = "Patriots Game Script (2015)", x = "Game Script", 
          y = "Pass Ratio")
 
