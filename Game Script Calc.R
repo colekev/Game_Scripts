@@ -73,7 +73,7 @@ NE <- filter(gs15, team == "NE")
 # Plot team, patriots in this case
 gs_teamPlot <- ggplot(gs15, aes(gs, pRatio, label = team))
 
-gs_teamPlot + fte_theme() +
+gs_teamPlot +
     geom_text(data = NE, size = 3) + 
     geom_smooth(data = gs15) + 
     geom_point(data = gs15, alpha = 0.1, color = "blue") +
