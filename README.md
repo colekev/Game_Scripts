@@ -9,4 +9,6 @@ Chase explains it as:
 
 In this example, I [plotted the New England Patriots' game scripts](https://github.com/colekev/Game_Scripts/blob/master/gs_2015_NE.png) against the backdrop of the entire 2015 season. You can see that the Patriots are extremely pass-heavy, with only two games all season long where they ran more often than expect based on the league trendline.
 
+![patriotsGS](https://github.com/colekev/Game_Scripts/blob/master/gs_2015_NE.png)
+
 I used this analysis last season to show that Lamar Miller's lack of rushing attempts with Joe Philbin at the helm was [more about negative game script](http://rotoviz.com/2015/10/dan-campbell-saved-lamar-millers-season/) than ignoring the run game.
